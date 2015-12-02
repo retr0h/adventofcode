@@ -1,10 +1,15 @@
-n = 0
+floor = 0
+basement = False
 with open('input') as f:
     for line in f:
-        for l in list(line):
+        for index, l in enumerate(list(line), 1):
             if l == '(':
-                n = n + 1
+                floor += 1
             elif l == ')':
-                n = n - 1
+                floor -= 1
 
-print n
+            if floor == -1 and basement is False:
+                basement = True
+                print index
+
+print floor
