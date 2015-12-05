@@ -2,6 +2,7 @@ def open_file():
     with open('input', 'r') as f:
         return f.read()
 
+
 def get_directions(instructions):
     x = 0
     y = 0
@@ -20,6 +21,7 @@ def get_directions(instructions):
         current = (x, y)
         positions.add(current)
     return positions
+
 
 instructions = open_file()
 positions = get_directions(instructions)
