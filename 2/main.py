@@ -16,4 +16,7 @@ with open('input', 'r') as f:
         total += 2 * side1 + 2 * side2 + 2 * side3 + min(side1, side2, side3)
 
 print 'paper: {0}'.format(total)
+assert 1606483 == total
+
 print 'ribbon: {0}'.format(ribbon)
+assert 3842356 == ribbon
