@@ -1,6 +1,6 @@
 floor = 0
 basement = False
-with open('input') as f:
+with open('input', 'r') as f:
     for line in f:
         for index, l in enumerate(list(line), 1):
             if l == '(':
