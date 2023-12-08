@@ -10,6 +10,6 @@ with open('input', 'r') as f:
 
             if floor == -1 and basement is False:
                 basement = True
-                print index
+                print 'basement index: {0}'.format(index)
 
-print floor
+print 'floor: {0}'.format(floor)
