@@ -65,6 +65,13 @@ func main() {
 	defer file.Close()
 
 	totals, err := getCalibrationValues(file)
+	if err != nil {
+		log.Fatal(err)
+	}
 	total, _ := math.Sum(totals)
 	fmt.Println(total)
+
+	if total != 56108 {
+		panic("broke it")
+	}
 }
